@@ -1,0 +1,6 @@
+/target/
+/vendor/downloads/*.exe
+/test-data/*.hc
+/test-data/*.vhd
+/test-data/*.vhdx
+/staging/

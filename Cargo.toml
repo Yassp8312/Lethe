@@ -1,0 +1,12 @@
+[package]
+name = "lethe"
+version = "0.1.0"
+edition = "2024"
+description = "Lanzador seguro para un almacenamiento VeraCrypt con volumen exterior y oculto"
+license = "MIT"
+
+[profile.release]
+lto = true
+codegen-units = 1
+panic = "abort"
+strip = "symbols"

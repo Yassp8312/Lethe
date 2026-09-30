@@ -1,0 +1,204 @@
+{"kind":"deck","id":"pr/f7w3r9","name":"Deck"}
+{"kind":"layout","layoutId":"2315de5e-4f5e-4af0-9fe0-b6e369037265","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"f21eb7be-d4f8-4a1e-a892-f89f931c4b1d","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/tu2ss4","slide":1,"title":"PROYECTO LETHE","textShapes":5}
+{"kind":"shape","id":"sh/z6p0zq1o","slide":1,"bbox":[0,0,24,720]}
+{"kind":"textbox","id":"sh/07y1sbi9","slide":1,"text":"PROYECTO LETHE","textPreview":"PROYECTO LETHE","textChars":14,"textLines":1,"bbox":[82,84,600,38]}
+{"kind":"textbox","id":"sh/187i1gje","slide":1,"text":"Almacenamiento cifrado\ncon negación plausible","textPreview":"Almacenamiento cifrado | con negación plausible","textChars":45,"textLines":2,"bbox":[80,148,820,170]}
+{"kind":"textbox","id":"sh/m9gjul0z","slide":1,"text":"Diseño, seguridad y cierre del Sprint 6","textPreview":"Diseño, seguridad y cierre del Sprint 6","textChars":39,"textLines":1,"bbox":[84,348,720,44]}
+{"kind":"shape","id":"sh/nap03q1k","slide":1,"bbox":[83,458,620,96]}
+{"kind":"textbox","id":"sh/obi1wvi5","slide":1,"text":"Windows · VeraCrypt · Rust\nComponentes gratuitos","textPreview":"Windows · VeraCrypt · Rust | Componentes gratuitos","textChars":48,"textLines":2,"bbox":[110,478,560,58]}
+{"kind":"shape","id":"sh/9cri50jq","slide":1,"bbox":[1010,120,150,150]}
+{"kind":"shape","id":"sh/idwzi10v","slide":1,"bbox":[1055,165,60,60]}
+{"kind":"textbox","id":"sh/3e50r61g","slide":1,"text":"29 SEP 2026","textPreview":"29 SEP 2026","textChars":11,"textLines":1,"bbox":[982,318,210,34]}
+{"kind":"notes","id":"nt/tu2ss4","slide":1,"text":"Presentación del estado real del proyecto al cierre del Sprint 6."}
+{"kind":"slide","id":"sl/fdg7w8","slide":2,"title":"Una memoria, tres resultados","textShapes":10}
+{"kind":"shape","id":"sh/rq5kfe9k","slide":2,"bbox":[0,0,18,720]}
+{"kind":"textbox","id":"sh/sreloja5","slide":2,"text":"Una memoria, tres resultados","textPreview":"Una memoria, tres resultados","textChars":28,"textLines":1,"bbox":[66,42,1100,64]}
+{"kind":"textbox","id":"sh/dsn2horq","slide":2,"text":"La contraseña decide el volumen; Lethe no aprende cuál se abrió","textPreview":"La contraseña decide el volumen; Lethe no aprende cuál se abrió","textChars":63,"textLines":1,"bbox":[68,108,1080,38]}
+{"kind":"textbox","id":"sh/etw3qtsb","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1180,650,45,24]}
+{"kind":"shape","id":"sh/fupkjy9g","slide":2,"bbox":[70,190,350,300]}
+{"kind":"shape","id":"sh/0vyls3a1","slide":2,"bbox":[70,190,8,300]}
+{"kind":"textbox","id":"sh/1w72l8rm","slide":2,"text":"A · Contraseña inválida","textPreview":"A · Contraseña inválida","textChars":23,"textLines":1,"bbox":[96,212,302,38]}
+{"kind":"textbox","id":"sh/uxcjepsr","slide":2,"text":"No aparece ninguna unidad.\n\nNo hay contador, borrado ni modificación del contenedor.","textPreview":"No aparece ninguna unidad. |  | No hay contador, borrado ni modificación del contenedor.","textChars":84,"textLines":3,"bbox":[96,258,302,214]}
+{"kind":"shape","id":"sh/vylk7u9c","slide":2,"bbox":[465,190,350,300]}
+{"kind":"shape","id":"sh/rqlkvitk","slide":2,"bbox":[465,190,8,300]}
+{"kind":"textbox","id":"sh/65c3mdcz","slide":2,"text":"B · Contraseña señuelo","textPreview":"B · Contraseña señuelo","textChars":22,"textLines":1,"bbox":[491,212,302,38]}
+{"kind":"textbox","id":"sh/tsn2xsbq","slide":2,"text":"VeraCrypt monta el volumen exterior con el contenido preparado para mostrarse.","textPreview":"VeraCrypt monta el volumen exterior con el contenido preparado para mostrarse.","textChars":78,"textLines":1,"bbox":[491,258,302,214]}
+{"kind":"shape","id":"sh/srelonu5","slide":2,"bbox":[860,190,350,300]}
+{"kind":"shape","id":"sh/j2lkryt8","slide":2,"bbox":[860,190,8,300]}
+{"kind":"textbox","id":"sh/i1c3itc3","slide":2,"text":"C · Contraseña real","textPreview":"C · Contraseña real","textChars":19,"textLines":1,"bbox":[886,212,302,38]}
+{"kind":"textbox","id":"sh/5432t8be","slide":2,"text":"VeraCrypt monta el volumen oculto con los datos privados.","textPreview":"VeraCrypt monta el volumen oculto con los datos privados.","textChars":57,"textLines":1,"bbox":[886,258,302,214]}
+{"kind":"textbox","id":"sh/43ulk3ut","slide":2,"text":"La contraseña se introduce únicamente en el diálogo oficial de VeraCrypt.","textPreview":"La contraseña se introduce únicamente en el diálogo oficial de VeraCrypt.","textChars":73,"textLines":1,"bbox":[180,548,920,42]}
+{"kind":"notes","id":"nt/fdg7w8","slide":2,"text":"Los tres resultados usan un mismo contenedor con volumen exterior y volumen oculto."}
+{"kind":"slide","id":"sl/o2xewz","slide":3,"title":"Arquitectura y límite de confianza","textShapes":13}
+{"kind":"shape","id":"sh/3qhcryxc","slide":3,"bbox":[0,0,18,720]}
+{"kind":"textbox","id":"sh/4rat03ex","slide":3,"text":"Arquitectura y límite de confianza","textPreview":"Arquitectura y límite de confianza","textChars":34,"textLines":1,"bbox":[66,42,1100,64]}
+{"kind":"textbox","id":"sh/psjut8fi","slide":3,"text":"Lethe coordina; VeraCrypt realiza la criptografía y solicita la contraseña","textPreview":"Lethe coordina; VeraCrypt realiza la criptografía y solicita la contraseña","textChars":74,"textLines":1,"bbox":[68,108,1080,38]}
+{"kind":"textbox","id":"sh/u18butwf","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1180,650,45,24]}
+{"kind":"shape","id":"sh/fmhsnex0","slide":3,"bbox":[80,230,220,150]}
+{"kind":"textbox","id":"sh/gnqtwjel","slide":3,"text":"Panel","textPreview":"Panel","textChars":5,"textLines":1,"bbox":[98,252,184,36]}
+{"kind":"textbox","id":"sh/hozapof6","slide":3,"text":"Acciones y mensajes","textPreview":"Acciones y mensajes","textChars":19,"textLines":1,"bbox":[98,304,184,48]}
+{"kind":"shape","id":"sh/yhsb6dwz","slide":3,"bbox":[302,284,34,38]}
+{"kind":"shape","id":"sh/zi1czidk","slide":3,"bbox":[340,230,220,150]}
+{"kind":"textbox","id":"sh/32dgbmhs","slide":3,"text":"Núcleo Rust","textPreview":"Núcleo Rust","textChars":11,"textLines":1,"bbox":[358,252,184,36]}
+{"kind":"textbox","id":"sh/i14fihg7","slide":3,"text":"Estados y validaciones","textPreview":"Estados y validaciones","textChars":22,"textLines":1,"bbox":[358,304,184,48]}
+{"kind":"shape","id":"sh/54vydczy","slide":3,"bbox":[562,284,34,38]}
+{"kind":"shape","id":"sh/43mxk7yd","slide":3,"bbox":[600,230,220,150]}
+{"kind":"textbox","id":"sh/r6xgfmh4","slide":3,"text":"Adaptador","textPreview":"Adaptador","textChars":9,"textLines":1,"bbox":[618,252,184,36]}
+{"kind":"textbox","id":"sh/q5ozmhgj","slide":3,"text":"Invocación segura","textPreview":"Invocación segura","textChars":17,"textLines":1,"bbox":[618,304,184,48]}
+{"kind":"shape","id":"sh/d8fyhwzu","slide":3,"bbox":[822,284,34,38]}
+{"kind":"shape","id":"sh/s76hory9","slide":3,"bbox":[860,230,220,150]}
+{"kind":"textbox","id":"sh/fuxgj6h0","slide":3,"text":"VeraCrypt","textPreview":"VeraCrypt","textChars":9,"textLines":1,"bbox":[878,252,184,36]}
+{"kind":"textbox","id":"sh/etozq1gf","slide":3,"text":"Cifrado y montaje","textPreview":"Cifrado y montaje","textChars":17,"textLines":1,"bbox":[878,304,184,48]}
+{"kind":"shape","id":"sh/apsji50n","slide":3,"bbox":[312,454,656,88]}
+{"kind":"textbox","id":"sh/bq10bq18","slide":3,"text":"Límite clave","textPreview":"Límite clave","textChars":12,"textLines":1,"bbox":[338,475,150,30]}
+{"kind":"textbox","id":"sh/wra1kvit","slide":3,"text":"Lethe nunca recibe contraseñas ni intenta identificar el volumen abierto.","textPreview":"Lethe nunca recibe contraseñas ni intenta identificar el volumen abierto.","textChars":73,"textLines":1,"bbox":[482,470,450,44]}
+{"kind":"notes","id":"nt/o2xewz","slide":3,"text":"La contraseña no pasa por argumentos, archivos, variables de entorno ni registros de Lethe."}
+{"kind":"slide","id":"sl/j1bn70","slide":4,"title":"Decisiones que reducen riesgo","textShapes":10}
+{"kind":"shape","id":"sh/ojm9snmx","slide":4,"bbox":[0,0,18,720]}
+{"kind":"textbox","id":"sh/nidszi5c","slide":4,"text":"Decisiones que reducen riesgo","textPreview":"Decisiones que reducen riesgo","textChars":29,"textLines":1,"bbox":[66,42,1100,64]}
+{"kind":"textbox","id":"sh/2x4rqd4r","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1180,650,45,24]}
+{"kind":"shape","id":"sh/xofa5sne","slide":4,"bbox":[72,150,550,180]}
+{"kind":"shape","id":"sh/cn69w7mt","slide":4,"bbox":[72,150,8,180]}
+{"kind":"textbox","id":"sh/bmxs3258","slide":4,"text":"VeraCrypt, no criptografía propia","textPreview":"VeraCrypt, no criptografía propia","textChars":33,"textLines":1,"bbox":[98,172,502,38]}
+{"kind":"textbox","id":"sh/al4rux4n","slide":4,"text":"Se reutiliza un formato auditado y volúmenes ocultos.","textPreview":"Se reutiliza un formato auditado y volúmenes ocultos.","textChars":53,"textLines":1,"bbox":[98,218,502,94]}
+{"kind":"shape","id":"sh/lsfa9cna","slide":4,"bbox":[654,150,550,180]}
+{"kind":"shape","id":"sh/kr6907mp","slide":4,"bbox":[654,150,8,180]}
+{"kind":"textbox","id":"sh/uho3ix4v","slide":4,"text":"Solo lectura por defecto","textPreview":"Solo lectura por defecto","textChars":24,"textLines":1,"bbox":[680,172,502,38]}
+{"kind":"textbox","id":"sh/vixkb25g","slide":4,"text":"Reduce el riesgo de dañar el volumen oculto.","textPreview":"Reduce el riesgo de dañar el volumen oculto.","textChars":44,"textLines":1,"bbox":[680,218,502,94]}
+{"kind":"shape","id":"sh/wj6lk7m1","slide":4,"bbox":[72,390,550,180]}
+{"kind":"shape","id":"sh/hkzmdsnm","slide":4,"bbox":[72,390,8,180]}
+{"kind":"textbox","id":"sh/il83mx47","slide":4,"text":"Preparación transaccional","textPreview":"Preparación transaccional","textChars":25,"textLines":1,"bbox":[98,412,502,38]}
+{"kind":"textbox","id":"sh/jmh4f25s","slide":4,"text":"Un paquete incompleto nunca se publica como válido.","textPreview":"Un paquete incompleto nunca se publica como válido.","textChars":51,"textLines":1,"bbox":[98,458,502,94]}
+{"kind":"shape","id":"sh/4nqlo7mx","slide":4,"bbox":[654,390,550,180]}
+{"kind":"shape","id":"sh/5ozmhcni","slide":4,"bbox":[654,390,8,180]}
+{"kind":"textbox","id":"sh/yp43ad4n","slide":4,"text":"Pruebas VHDX antes de USB","textPreview":"Pruebas VHDX antes de USB","textChars":25,"textLines":1,"bbox":[680,412,502,38]}
+{"kind":"textbox","id":"sh/zqdk3i58","slide":4,"text":"Las operaciones destructivas se aislaron en laboratorio.","textPreview":"Las operaciones destructivas se aislaron en laboratorio.","textChars":56,"textLines":1,"bbox":[680,458,502,94]}
+{"kind":"notes","id":"nt/j1bn70","slide":4,"text":"Las decisiones completas se encuentran en docs/DECISIONES.md y en el informe técnico."}
+{"kind":"slide","id":"sl/ox47ji","slide":5,"title":"Restauración con barreras sucesivas","textShapes":20}
+{"kind":"shape","id":"sh/n2twfu10","slide":5,"bbox":[0,0,18,720]}
+{"kind":"textbox","id":"sh/o32xozi5","slide":5,"text":"Restauración con barreras sucesivas","textPreview":"Restauración con barreras sucesivas","textChars":35,"textLines":1,"bbox":[66,42,1100,64]}
+{"kind":"textbox","id":"sh/94beh4jq","slide":5,"text":"La implementación destructiva actual acepta únicamente VHD y VHDX locales","textPreview":"La implementación destructiva actual acepta únicamente VHD y VHDX locales","textChars":73,"textLines":1,"bbox":[68,108,1080,38]}
+{"kind":"textbox","id":"sh/ed0vip03","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1180,650,45,24]}
+{"kind":"shape","id":"sh/ze9wbu1o","slide":5,"bbox":[140,176,64,64]}
+{"kind":"textbox","id":"sh/0fidkzi9","slide":5,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[140,188,64,36]}
+{"kind":"textbox","id":"sh/1gbedkju","slide":5,"text":"Plan","textPreview":"Plan","textChars":4,"textLines":1,"bbox":[72,266,200,34]}
+{"kind":"textbox","id":"sh/y94fu90n","slide":5,"text":"Sin escritura","textPreview":"Sin escritura","textChars":13,"textLines":1,"bbox":[72,310,200,44]}
+{"kind":"shape","id":"sh/jadwneh8","slide":5,"bbox":[262,192,42,30]}
+{"kind":"shape","id":"sh/nqtsru50","slide":5,"bbox":[372,176,64,64]}
+{"kind":"textbox","id":"sh/mpkryp4f","slide":5,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[372,188,64,36]}
+{"kind":"textbox","id":"sh/9sbat4n6","slide":5,"text":"Confirmar","textPreview":"Confirmar","textChars":9,"textLines":1,"bbox":[304,266,200,34]}
+{"kind":"textbox","id":"sh/or290zml","slide":5,"text":"Objetivo visible","textPreview":"Objetivo visible","textChars":16,"textLines":1,"bbox":[304,310,200,44]}
+{"kind":"shape","id":"sh/butsvu5w","slide":5,"bbox":[494,192,42,30]}
+{"kind":"shape","id":"sh/atkr294b","slide":5,"bbox":[604,176,64,64]}
+{"kind":"textbox","id":"sh/xgbax4n2","slide":5,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[604,188,64,36]}
+{"kind":"textbox","id":"sh/wv294zmh","slide":5,"text":"Revalidar","textPreview":"Revalidar","textChars":9,"textLines":1,"bbox":[536,266,200,34]}
+{"kind":"textbox","id":"sh/jidszel8","slide":5,"text":"Identidad exacta","textPreview":"Identidad exacta","textChars":16,"textLines":1,"bbox":[536,310,200,44]}
+{"kind":"shape","id":"sh/yh4r694n","slide":5,"bbox":[726,192,42,30]}
+{"kind":"shape","id":"sh/udovydov","slide":5,"bbox":[836,176,64,64]}
+{"kind":"textbox","id":"sh/vexc7ipg","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[836,188,64,36]}
+{"kind":"textbox","id":"sh/gf6d0n61","slide":5,"text":"Elevar","textPreview":"Elevar","textChars":6,"textLines":1,"bbox":[768,266,200,34]}
+{"kind":"textbox","id":"sh/hgzu9sn6","slide":5,"text":"UAC explícito","textPreview":"UAC explícito","textChars":13,"textLines":1,"bbox":[768,310,200,44]}
+{"kind":"shape","id":"sh/6pobutoj","slide":5,"bbox":[958,192,42,30]}
+{"kind":"shape","id":"sh/7axc3yp4","slide":5,"bbox":[1068,176,64,64]}
+{"kind":"textbox","id":"sh/8b6dw36p","slide":5,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1068,188,64,36]}
+{"kind":"textbox","id":"sh/tcfu587a","slide":5,"text":"Verificar","textPreview":"Verificar","textChars":9,"textLines":1,"bbox":[1000,266,200,34]}
+{"kind":"textbox","id":"sh/ql8v6xo3","slide":5,"text":"GPT · exFAT","textPreview":"GPT · exFAT","textChars":11,"textLines":1,"bbox":[1000,310,200,44]}
+{"kind":"shape","id":"sh/r6hcz25o","slide":5,"bbox":[150,425,980,114]}
+{"kind":"textbox","id":"sh/lcn6l0b2","slide":5,"text":"Cualquier diferencia cancela","textPreview":"Cualquier diferencia cancela","textChars":28,"textLines":1,"bbox":[185,449,360,34]}
+{"kind":"textbox","id":"sh/0bupsvuh","slide":5,"text":"No se adivina otro objetivo y ningún número de disco se sustituye automáticamente.","textPreview":"No se adivina otro objetivo y ningún número de disco se sustituye automáticamente.","textChars":82,"textLines":1,"bbox":[185,490,880,32]}
+{"kind":"notes","id":"nt/ox47ji","slide":5,"text":"El ayudante desmonta la imagen en un bloque de limpieza incluso cuando falla la operación."}
+{"kind":"slide","id":"sl/7o8296","slide":6,"title":"Qué añade el Sprint 6","textShapes":8}
+{"kind":"shape","id":"sh/7u1w3qpg","slide":6,"bbox":[0,0,18,720]}
+{"kind":"textbox","id":"sh/8vadwvq1","slide":6,"text":"Qué añade el Sprint 6","textPreview":"Qué añade el Sprint 6","textChars":21,"textLines":1,"bbox":[66,42,1100,64]}
+{"kind":"textbox","id":"sh/9wje507m","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1180,650,45,24]}
+{"kind":"shape","id":"sh/uxsvy587","slide":6,"bbox":[92,168,10,10]}
+{"kind":"textbox","id":"sh/vylw7aps","slide":6,"text":"Inspección USB dirigida por una letra explícita","textPreview":"Inspección USB dirigida por una letra explícita","textChars":47,"textLines":1,"bbox":[116,160,996,70]}
+{"kind":"shape","id":"sh/wzud0fqx","slide":6,"bbox":[92,242,10,10]}
+{"kind":"textbox","id":"sh/h03e9k7i","slide":6,"text":"Validación de etiqueta, bus, capacidad, serial y banderas","textPreview":"Validación de etiqueta, bus, capacidad, serial y banderas","textChars":57,"textLines":1,"bbox":[116,234,996,70]}
+{"kind":"shape","id":"sh/i1cv2p83","slide":6,"bbox":[92,316,10,10]}
+{"kind":"textbox","id":"sh/j2lwbapo","slide":6,"text":"Registro local mínimo sin contraseñas ni identidad del dispositivo","textPreview":"Registro local mínimo sin contraseñas ni identidad del dispositivo","textChars":66,"textLines":1,"bbox":[116,308,996,70]}
+{"kind":"shape","id":"sh/zi58nqhw","slide":6,"bbox":[92,390,10,10]}
+{"kind":"textbox","id":"sh/yhw7ulgb","slide":6,"text":"Pruebas de rechazo para etiqueta, particiones y disco de sistema","textPreview":"Pruebas de rechazo para etiqueta, particiones y disco de sistema","textChars":64,"textLines":1,"bbox":[116,382,996,70]}
+{"kind":"shape","id":"sh/lknqp0z2","slide":6,"bbox":[92,464,10,10]}
+{"kind":"textbox","id":"sh/kjepwvyh","slide":6,"text":"Manual de recuperación, protocolo final e informe de entrega","textPreview":"Manual de recuperación, protocolo final e informe de entrega","textChars":60,"textLines":1,"bbox":[116,456,996,70]}
+{"kind":"shape","id":"sh/bel8jqh0","slide":6,"bbox":[765,560,410,68]}
+{"kind":"textbox","id":"sh/adc7qlgf","slide":6,"text":"PHYSICAL_EXECUTION=DISABLED","textPreview":"PHYSICAL_EXECUTION=DISABLED","textChars":27,"textLines":1,"bbox":[782,578,376,30]}
+{"kind":"notes","id":"nt/7o8296","slide":6,"text":"La inspección escribe únicamente un script temporal local y el registro bajo LOCALAPPDATA."}
+{"kind":"slide","id":"sl/1kszh9","slide":7,"title":"Memoria candidata verificada sin cambios","textShapes":20}
+{"kind":"shape","id":"sh/grulw3ut","slide":7,"bbox":[0,0,18,720]}
+{"kind":"textbox","id":"sh/fqlk3yt8","slide":7,"text":"Memoria candidata verificada sin cambios","textPreview":"Memoria candidata verificada sin cambios","textChars":40,"textLines":1,"bbox":[66,42,1100,64]}
+{"kind":"textbox","id":"sh/u5s3udcn","slide":7,"text":"Instantánea observada el 29 de septiembre de 2026","textPreview":"Instantánea observada el 29 de septiembre de 2026","textChars":49,"textLines":1,"bbox":[68,108,1080,38]}
+{"kind":"textbox","id":"sh/pw3m9sbq","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1180,650,45,24]}
+{"kind":"textbox","id":"sh/4vul0nu5","slide":7,"text":"Letra","textPreview":"Letra","textChars":5,"textLines":1,"bbox":[80,165,210,28]}
+{"kind":"textbox","id":"sh/3ul47itk","slide":7,"text":"F:","textPreview":"F:","textChars":2,"textLines":1,"bbox":[295,163,330,34]}
+{"kind":"shape","id":"sh/2tc3ydcz","slide":7,"bbox":[80,212,500,1]}
+{"kind":"textbox","id":"sh/50j2xob6","slide":7,"text":"Etiqueta","textPreview":"Etiqueta","textChars":8,"textLines":1,"bbox":[80,247,210,28]}
+{"kind":"textbox","id":"sh/kzalojul","slide":7,"text":"JORGITO","textPreview":"JORGITO","textChars":7,"textLines":1,"bbox":[295,245,330,34]}
+{"kind":"shape","id":"sh/6tg7ip03","slide":7,"bbox":[80,294,500,1]}
+{"kind":"textbox","id":"sh/ru98buho","slide":7,"text":"Sistema","textPreview":"Sistema","textChars":7,"textLines":1,"bbox":[80,329,210,28]}
+{"kind":"textbox","id":"sh/svipkzi9","slide":7,"text":"NTFS","textPreview":"NTFS","textChars":4,"textLines":1,"bbox":[295,327,330,34]}
+{"kind":"shape","id":"sh/twrqd4ze","slide":7,"bbox":[80,376,500,1]}
+{"kind":"textbox","id":"sh/ex07mpgz","slide":7,"text":"Disco","textPreview":"Disco","textChars":5,"textLines":1,"bbox":[80,411,210,28]}
+{"kind":"textbox","id":"sh/fy98fuhk","slide":7,"text":"2 / partición 1","textPreview":"2 / partición 1","textChars":15,"textLines":1,"bbox":[295,409,330,34]}
+{"kind":"shape","id":"sh/gzipozy5","slide":7,"bbox":[80,458,500,1]}
+{"kind":"textbox","id":"sh/10rqh4zq","slide":7,"text":"Capacidad","textPreview":"Capacidad","textChars":9,"textLines":1,"bbox":[660,165,210,28]}
+{"kind":"textbox","id":"sh/2107q9gb","slide":7,"text":"8 011 120 640 bytes","textPreview":"8 011 120 640 bytes","textChars":19,"textLines":1,"bbox":[875,163,330,34]}
+{"kind":"shape","id":"sh/3mt8jehw","slide":7,"bbox":[660,212,500,1]}
+{"kind":"textbox","id":"sh/zqto7exo","slide":7,"text":"Bus","textPreview":"Bus","textChars":3,"textLines":1,"bbox":[660,247,210,28]}
+{"kind":"textbox","id":"sh/ypk7y9wj","slide":7,"text":"USB","textPreview":"USB","textChars":3,"textLines":1,"bbox":[875,245,330,34]}
+{"kind":"shape","id":"sh/lsb69ofu","slide":7,"bbox":[660,294,500,1]}
+{"kind":"textbox","id":"sh/0r2p0je9","slide":7,"text":"Serial","textPreview":"Serial","textChars":6,"textLines":1,"bbox":[660,329,210,28]}
+{"kind":"textbox","id":"sh/b2to3uxs","slide":7,"text":"057907B76060","textPreview":"057907B76060","textChars":12,"textLines":1,"bbox":[875,327,330,34]}
+{"kind":"shape","id":"sh/q1k7u9w7","slide":7,"bbox":[660,376,500,1]}
+{"kind":"textbox","id":"sh/dob654fy","slide":7,"text":"Arranque / sistema","textPreview":"Arranque / sistema","textChars":18,"textLines":1,"bbox":[660,411,210,28]}
+{"kind":"textbox","id":"sh/c32pwzed","slide":7,"text":"No / No","textPreview":"No / No","textChars":7,"textLines":1,"bbox":[875,409,330,34]}
+{"kind":"shape","id":"sh/3y9ozuxw","slide":7,"bbox":[660,458,500,1]}
+{"kind":"shape","id":"sh/2x07qpwb","slide":7,"bbox":[190,535,900,76]}
+{"kind":"textbox","id":"sh/sredkrqx","slide":7,"text":"READY_FOR_FINAL_TEST  ·  CHANGES=NONE","textPreview":"READY_FOR_FINAL_TEST  ·  CHANGES=NONE","textChars":37,"textLines":1,"bbox":[220,555,840,34]}
+{"kind":"notes","id":"nt/1kszh9","slide":7,"text":"La identidad debe volver a comprobarse inmediatamente antes de una futura prueba física."}
+{"kind":"slide","id":"sl/9ygsxv","slide":8,"title":"Evidencia de calidad","textShapes":14}
+{"kind":"shape","id":"sh/ofyl4fql","slide":8,"bbox":[0,0,18,720]}
+{"kind":"textbox","id":"sh/ne54bapg","slide":8,"text":"Evidencia de calidad","textPreview":"Evidencia de calidad","textChars":20,"textLines":1,"bbox":[66,42,1100,64]}
+{"kind":"textbox","id":"sh/2dw3258v","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1180,650,45,24]}
+{"kind":"shape","id":"sh/1cnm907a","slide":8,"bbox":[92,164,180,180]}
+{"kind":"textbox","id":"sh/0bel0fqp","slide":8,"text":"41","textPreview":"41","textChars":2,"textLines":1,"bbox":[110,195,144,72]}
+{"kind":"textbox","id":"sh/fa547ap4","slide":8,"text":"pruebas","textPreview":"pruebas","textChars":7,"textLines":1,"bbox":[110,268,144,32]}
+{"kind":"shape","id":"sh/e9w3y58j","slide":8,"bbox":[330,150,390,190]}
+{"kind":"shape","id":"sh/l8rml47e","slide":8,"bbox":[330,150,8,190]}
+{"kind":"textbox","id":"sh/k7i5czqt","slide":8,"text":"Compilación","textPreview":"Compilación","textChars":11,"textLines":1,"bbox":[356,172,342,38]}
+{"kind":"textbox","id":"sh/ydg3qpgn","slide":8,"text":"Release correcto\nClippy sin advertencias","textPreview":"Release correcto | Clippy sin advertencias","textChars":40,"textLines":2,"bbox":[356,218,342,104]}
+{"kind":"shape","id":"sh/zep4jux8","slide":8,"bbox":[770,150,390,190]}
+{"kind":"shape","id":"sh/kfylszyt","slide":8,"bbox":[770,150,8,190]}
+{"kind":"textbox","id":"sh/l07ml4fe","slide":8,"text":"Restauración virtual","textPreview":"Restauración virtual","textChars":20,"textLines":1,"bbox":[796,172,342,38]}
+{"kind":"textbox","id":"sh/a9w3mpgr","slide":8,"text":"GPT · exFAT · JORGITO\nImagen desmontada al finalizar","textPreview":"GPT · exFAT · JORGITO | Imagen desmontada al finalizar","textChars":52,"textLines":2,"bbox":[796,218,342,104]}
+{"kind":"shape","id":"sh/bap4fuxc","slide":8,"bbox":[330,390,390,170]}
+{"kind":"shape","id":"sh/cbylofyx","slide":8,"bbox":[330,390,8,170]}
+{"kind":"textbox","id":"sh/xc7mhkf2","slide":8,"text":"Fallos controlados","textPreview":"Fallos controlados","textChars":18,"textLines":1,"bbox":[356,412,342,38]}
+{"kind":"textbox","id":"sh/u50ny9gv","slide":8,"text":"Identidad cambiada, confirmación incorrecta y objetivo externo se cancelan.","textPreview":"Identidad cambiada, confirmación incorrecta y objetivo externo se cancelan.","textChars":75,"textLines":1,"bbox":[356,458,342,84]}
+{"kind":"shape","id":"sh/v694rexg","slide":8,"bbox":[770,390,390,170]}
+{"kind":"shape","id":"sh/ra10j6ds","slide":8,"bbox":[770,390,8,170]}
+{"kind":"textbox","id":"sh/qpsjq1w7","slide":8,"text":"USB física","textPreview":"USB física","textChars":10,"textLines":1,"bbox":[796,412,342,38]}
+{"kind":"textbox","id":"sh/dc3ilgvy","slide":8,"text":"Inspección aprobada; backend destructivo bloqueado.","textPreview":"Inspección aprobada; backend destructivo bloqueado.","textChars":51,"textLines":1,"bbox":[796,458,342,84]}
+{"kind":"textbox","id":"sh/sbu1sbed","slide":8,"text":"Límite","textPreview":"Límite","textChars":6,"textLines":1,"bbox":[92,400,180,30]}
+{"kind":"textbox","id":"sh/fel0nqd4","slide":8,"text":"El binario de desarrollo todavía no tiene firma propia.","textPreview":"El binario de desarrollo todavía no tiene firma propia.","textChars":55,"textLines":1,"bbox":[80,442,205,92]}
+{"kind":"notes","id":"nt/9ygsxv","slide":8,"text":"Las pruebas validan las barreras de Lethe; no sustituyen una auditoría de VeraCrypt."}
+{"kind":"slide","id":"sl/1m0aws","slide":9,"title":"Siguiente paso","textShapes":9}
+{"kind":"shape","id":"sh/fe9sv2lo","slide":9,"bbox":[0,0,18,720]}
+{"kind":"textbox","id":"sh/gfito729","slide":9,"text":"Siguiente paso","textPreview":"Siguiente paso","textChars":14,"textLines":1,"bbox":[66,42,1100,64]}
+{"kind":"textbox","id":"sh/1gbaxs3e","slide":9,"text":"Revisar y autorizar la implementación física antes de tocar la memoria","textPreview":"Revisar y autorizar la implementación física antes de tocar la memoria","textChars":70,"textLines":1,"bbox":[68,108,1080,38]}
+{"kind":"textbox","id":"sh/2hkbqxkz","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1180,650,45,24]}
+{"kind":"shape","id":"sh/3itcz2lk","slide":9,"bbox":[92,166,10,10]}
+{"kind":"textbox","id":"sh/oj2ts725","slide":9,"text":"Confirmar una copia de seguridad y cerrar todos los volúmenes","textPreview":"Confirmar una copia de seguridad y cerrar todos los volúmenes","textChars":61,"textLines":1,"bbox":[116,158,1036,64]}
+{"kind":"shape","id":"sh/pkbu1c3q","slide":9,"bbox":[92,234,10,10]}
+{"kind":"textbox","id":"sh/ilgbedkv","slide":9,"text":"Revalidar letra, etiqueta, capacidad, bus, serial y banderas","textPreview":"Revalidar letra, etiqueta, capacidad, bus, serial y banderas","textChars":60,"textLines":1,"bbox":[116,226,1036,64]}
+{"kind":"shape","id":"sh/jmpsnilg","slide":9,"bbox":[92,302,10,10]}
+{"kind":"textbox","id":"sh/nehsre94","slide":9,"text":"Mostrar un plan destructivo y exigir una frase específica","textPreview":"Mostrar un plan destructivo y exigir una frase específica","textChars":57,"textLines":1,"bbox":[116,294,1036,64]}
+{"kind":"shape","id":"sh/2d8ry9sj","slide":9,"bbox":[92,370,10,10]}
+{"kind":"textbox","id":"sh/pgzatora","slide":9,"text":"Revalidar otra vez dentro del ayudante elevado","textPreview":"Revalidar otra vez dentro del ayudante elevado","textChars":46,"textLines":1,"bbox":[116,362,1036,64]}
+{"kind":"shape","id":"sh/ofq90jap","slide":9,"bbox":[92,438,10,10]}
+{"kind":"textbox","id":"sh/faxsnu98","slide":9,"text":"Cancelar ante cualquier diferencia y verificar la reconexión final","textPreview":"Cancelar ante cualquier diferencia y verificar la reconexión final","textChars":66,"textLines":1,"bbox":[116,430,1036,64]}
+{"kind":"shape","id":"sh/e9oru9sn","slide":9,"bbox":[180,545,920,78]}
+{"kind":"textbox","id":"sh/1czap4re","slide":9,"text":"Hasta entonces, F: permanece intacta","textPreview":"Hasta entonces, F: permanece intacta","textChars":36,"textLines":1,"bbox":[210,565,860,36]}
+{"kind":"notes","id":"nt/1m0aws","slide":9,"text":"La restauración lógica de una memoria flash no se describe como borrado forense."}
